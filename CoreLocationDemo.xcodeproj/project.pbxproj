@@ -13,6 +13,7 @@
 		182B74451A8311EE00C521B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182B74441A8311EE00C521B3 /* Images.xcassets */; };
 		182B74481A8311EE00C521B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182B74461A8311EE00C521B3 /* LaunchScreen.xib */; };
 		182B74541A8311EE00C521B3 /* CoreLocationDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182B74531A8311EE00C521B3 /* CoreLocationDemoTests.swift */; };
+		182B745E1A83120600C521B3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B745D1A83120600C521B3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		182B744D1A8311EE00C521B3 /* CoreLocationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182B74521A8311EE00C521B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		182B74531A8311EE00C521B3 /* CoreLocationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationDemoTests.swift; sourceTree = "<group>"; };
+		182B745D1A83120600C521B3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182B745E1A83120600C521B3 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		182B742F1A8311EE00C521B3 = {
 			isa = PBXGroup;
 			children = (
+				182B745D1A83120600C521B3 /* CoreLocation.framework */,
 				182B743A1A8311EE00C521B3 /* CoreLocationDemo */,
 				182B74501A8311EE00C521B3 /* CoreLocationDemoTests */,
 				182B74391A8311EE00C521B3 /* Products */,
@@ -161,6 +165,7 @@
 				TargetAttributes = {
 					182B74371A8311EE00C521B3 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = ARWP59A6T9;
 					};
 					182B744C1A8311EE00C521B3 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -338,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CoreLocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CoreLocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
